@@ -25,16 +25,15 @@ import java.util.Random;
 
 
 public class Functions {
-
-	JavascriptExecutor js;
-    String Date_Selector = "//*[@class=\"span\" and normalize-space(text())=\"1\"]";
-    String Dashboad_Date_Selector = "//*[@class=\"day-number \" and normalize-space(text())=\"1\"]";
-    WebElement DS;
-    static WebDriver driver;
-    static Login_Functions Login = new Login_Functions();
-    static String Time_Zone_Calendar_Link = "https://imeetify.com/testpurplemeet/Time-Zone";
-	static String timePart;
-	static String Country_Name;
+JavascriptExecutor js;
+String Date_Selector = "//*[@class=\"span\" and normalize-space(text())=\"1\"]";
+String Dashboad_Date_Selector = "//*[@class=\"day-number \" and normalize-space(text())=\"1\"]";
+WebElement DS;
+static WebDriver driver;
+static Login_Functions Login = new Login_Functions();
+static String Time_Zone_Calendar_Link = "https://imeetify.com/testpurplemeet/Time-Zone";
+static String timePart;
+static String Country_Name;
 	
 
 	public static Object[] Appointment(WebDriver driver , String Date,String Meeting_time,String Appointment_timezone) throws Exception{
